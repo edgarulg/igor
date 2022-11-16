@@ -70,7 +70,7 @@ public class ConcourseBuildMonitor
       BuildServices buildServices,
       ConcourseCache cache,
       ConcourseProperties concourseProperties,
-      TaskScheduler scheduler) {
+      @Qualifier("taskScheduler") TaskScheduler scheduler) {
     super(
         properties,
         registry,

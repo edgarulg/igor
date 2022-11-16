@@ -55,7 +55,7 @@ public class PluginsBuildMonitor
       PluginReleaseService pluginInfoService,
       PluginCache cache,
       Optional<EchoService> echoService,
-      TaskScheduler scheduler) {
+      @Qualifier("taskScheduler") TaskScheduler scheduler) {
     super(
         igorProperties,
         registry,

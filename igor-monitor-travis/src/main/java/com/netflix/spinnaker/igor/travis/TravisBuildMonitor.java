@@ -81,7 +81,7 @@ public class TravisBuildMonitor
       TravisProperties travisProperties,
       Optional<EchoService> echoService,
       Optional<LockService> lockService,
-      TaskScheduler scheduler) {
+      @Qualifier("taskScheduler") TaskScheduler scheduler) {
     super(
         properties,
         registry,

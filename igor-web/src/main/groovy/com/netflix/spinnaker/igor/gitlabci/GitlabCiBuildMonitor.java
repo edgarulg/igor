@@ -77,7 +77,7 @@ public class GitlabCiBuildMonitor
       BuildServices buildServices,
       GitlabCiProperties gitlabCiProperties,
       Optional<EchoService> echoService,
-      TaskScheduler scheduler) {
+      @Qualifier("taskScheduler") TaskScheduler scheduler) {
     super(
         properties,
         registry,

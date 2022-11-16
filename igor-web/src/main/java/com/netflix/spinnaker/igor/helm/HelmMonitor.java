@@ -59,7 +59,7 @@ public class HelmMonitor
       HelmCache cache,
       HelmAccounts helmAccounts,
       Optional<EchoService> echoService,
-      TaskScheduler scheduler) {
+      @Qualifier("taskScheduler") TaskScheduler scheduler) {
     super(
         properties,
         registry,

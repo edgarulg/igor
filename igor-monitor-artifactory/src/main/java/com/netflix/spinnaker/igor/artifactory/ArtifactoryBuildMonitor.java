@@ -76,7 +76,7 @@ public class ArtifactoryBuildMonitor
       Optional<EchoService> echoService,
       ArtifactoryCache cache,
       ArtifactoryProperties artifactoryProperties,
-      TaskScheduler scheduler) {
+      @Qualifier("taskScheduler") TaskScheduler scheduler) {
     super(
         properties,
         registry,
