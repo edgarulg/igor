@@ -11,6 +11,7 @@ package com.netflix.spinnaker.igor.wercker
 import com.netflix.spinnaker.kork.discovery.DiscoveryStatusListener
 import com.netflix.spinnaker.kork.dynamicconfig.DynamicConfigService
 import com.netflix.spinnaker.security.AuthenticatedRequest
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.scheduling.TaskScheduler
 
 import static com.netflix.spinnaker.igor.wercker.model.Run.finishedAtComparator

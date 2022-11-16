@@ -53,6 +53,7 @@ import org.jfrog.artifactory.client.ArtifactoryResponse;
 import org.jfrog.artifactory.client.aql.AqlItem;
 import org.jfrog.artifactory.client.aql.AqlQueryBuilder;
 import org.jfrog.artifactory.client.impl.ArtifactoryRequestImpl;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Service;
